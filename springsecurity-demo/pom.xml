@@ -10,7 +10,7 @@
     
     <properties>
         <spring.security.version>4.0.1.RELEASE</spring.security.version>
-        <spring.version>3.2.8.RELEASE</spring.version>
+        <spring.version>4.1.6.RELEASE</spring.version>
         <jstl.version>1.2</jstl.version>
         <javax.servlet.version>3.1.0</javax.servlet.version>
     </properties>
@@ -60,24 +60,4 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-    
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>
