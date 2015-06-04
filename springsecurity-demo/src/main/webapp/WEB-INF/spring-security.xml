@@ -13,13 +13,16 @@
         <intercept-url pattern="/" access="permitAll"/>
         <intercept-url pattern="/main" access="permitAll"/>
         <form-login 
+                        authentication-failure-url="/login?error"
+
             login-page="/login" 
             default-target-url="/main"  
             username-parameter="username"
             password-parameter="password" 
             login-processing-url="/j_spring_security_check"
-            authentication-failure-url="/login?error"
+            
         />
+        
         <logout logout-success-url="/login?logout" />
         <!-- enable csrf protection -->
         <csrf/>
